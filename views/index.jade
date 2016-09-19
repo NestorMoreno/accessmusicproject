@@ -20,3 +20,560 @@ block content
             a(href='#formats') Formatos manejados
           li
             a(href='#contact') Contacto
+
+  main#main(tabindex='-1')
+  h1.hidden Material musical accesible para todos
+  .container
+    .form-group
+      .col-lg-12.text-center
+        br
+        br
+        br
+        h1.section-heading
+          a.fa.fa-music
+          |  Accesmusic
+        hr
+        p Material musical accesible para todos
+    #form1.form-group
+      section.col-lg-12
+        h1.hidden Accessmusic
+        form#formAcces.form-horizontal(action='GenerarMidi', method='POST')
+          .form-group
+            label.text-left(for='instrument') Selecciona el instrumento:
+            select#instrument.form-control(title='Selecciona el instrumento')
+              option(value='PIANO', selected='true') Piano
+              option(value='CHURCH_ORGAN') Órgano
+              option(value='GUITAR') Guitarra acústica
+              option(value='DISTORTION_GUITAR') Guitarra distorsión
+              option(value='ACOUSTIC_BASS') Bajo
+              option(value='VIOLIN') Violín
+              option(value='STRING_ENSEMBLE_1') Orquesta de cuerdas
+              option(value='ACCORDIAN') Acordeón
+              option(value='PAN_FLUTE') Flauta
+          .form-group.text-left
+            label.text-left(for='tempo') Selecciona el tempo (bits por minuto):
+            select#tempo.form-control.text-left(title='selecciona el tempo')
+              option(value='40') 40 Grave
+              option(value='41') 41
+              option(value='42') 42
+              option(value='43') 43
+              option(value='44') 44
+              option(value='45') 45 Largo
+              option(value='46') 46
+              option(value='47') 47
+              option(value='48') 48
+              option(value='49') 49
+              option(value='50') 50 Larghetto
+              option(value='51') 51
+              option(value='52') 52
+              option(value='53') 53
+              option(value='54') 54
+              option(value='55') 55 Lento
+              option(value='56') 56
+              option(value='57') 57
+              option(value='58') 58
+              option(value='59') 59
+              option(value='60') 60 Adagio
+              option(value='61') 61
+              option(value='62') 62
+              option(value='63') 63
+              option(value='64') 64
+              option(value='65') 65 Adagietto
+              option(value='66') 66
+              option(value='67') 67
+              option(value='68') 68
+              option(value='69') 69
+              option(value='70') 70 Andante
+              option(value='71') 71
+              option(value='72') 72
+              option(value='73') 73
+              option(value='74') 74
+              option(value='75') 75
+              option(value='76') 76
+              option(value='77') 77
+              option(value='78') 78
+              option(value='79') 79
+              option(value='80') 80 Andantino
+              option(value='81') 81
+              option(value='82') 82
+              option(value='83') 83
+              option(value='84') 84
+              option(value='85') 85
+              option(value='86') 86
+              option(value='87') 87
+              option(value='88') 88
+              option(value='89') 89
+              option(value='90') 90
+              option(value='91') 91
+              option(value='92') 92
+              option(value='93') 93
+              option(value='94') 94
+              option(value='95') 95 Moderato
+              option(value='96') 96
+              option(value='97') 97
+              option(value='98') 98
+              option(value='99') 99
+              option(value='100') 100
+              option(value='101') 101
+              option(value='102') 102
+              option(value='103') 103
+              option(value='104') 104
+              option(value='105') 105
+              option(value='106') 106
+              option(value='107') 107
+              option(value='108') 108
+              option(value='109') 109
+              option(value='110') 110 Allegretto
+              option(value='111') 111
+              option(value='112') 112
+              option(value='113') 113
+              option(value='114') 114
+              option(value='115') 115
+              option(value='116') 116
+              option(value='117') 117
+              option(value='118') 118
+              option(value='119') 119
+              option(value='120', selected='true') 120 Allegro
+              option(value='121') 121
+              option(value='122') 122
+              option(value='123') 123
+              option(value='124') 124
+              option(value='125') 125
+              option(value='126') 126
+              option(value='127') 127
+              option(value='128') 128
+              option(value='129') 129
+              option(value='130') 130
+              option(value='131') 131
+              option(value='132') 132
+              option(value='133') 133
+              option(value='134') 134
+              option(value='135') 135
+              option(value='136') 136
+              option(value='137') 137
+              option(value='138') 138
+              option(value='139') 139
+              option(value='140') 140
+              option(value='141') 141
+              option(value='142') 142
+              option(value='143') 143
+              option(value='144') 144
+              option(value='145') 145 Vivace
+              option(value='146') 146
+              option(value='147') 147
+              option(value='148') 148
+              option(value='149') 149
+              option(value='150') 150
+              option(value='151') 151
+              option(value='152') 152
+              option(value='153') 153
+              option(value='154') 154
+              option(value='155') 155
+              option(value='156') 156
+              option(value='157') 157
+              option(value='158') 158
+              option(value='159') 159
+              option(value='160') 160
+              option(value='161') 161
+              option(value='162') 162
+              option(value='163') 163
+              option(value='164') 164
+              option(value='165') 165
+              option(value='166') 166
+              option(value='167') 167
+              option(value='168') 168
+              option(value='169') 169
+              option(value='170') 170
+              option(value='171') 171
+              option(value='172') 172
+              option(value='173') 173
+              option(value='174') 174
+              option(value='175') 175
+              option(value='176') 176
+              option(value='177') 177
+              option(value='178') 178
+              option(value='179') 179
+              option(value='180') 180 Presto
+              option(value='181') 181
+              option(value='182') 182
+              option(value='183') 183
+              option(value='184') 184
+              option(value='185') 185
+              option(value='186') 186
+              option(value='187') 187
+              option(value='188') 188
+              option(value='189') 189
+              option(value='190') 190
+              option(value='191') 191
+              option(value='192') 192
+              option(value='193') 193
+              option(value='194') 194
+              option(value='195') 195
+              option(value='196') 196
+              option(value='197') 197
+              option(value='198') 198
+              option(value='199') 199
+              option(value='200') 200
+              option(value='201') 201
+              option(value='202') 202
+              option(value='203') 203
+              option(value='204') 204
+              option(value='205') 205
+              option(value='206') 206
+              option(value='207') 207
+              option(value='208') 208
+              option(value='209') 209
+              option(value='210') 210
+              option(value='211') 211
+              option(value='212') 212
+              option(value='213') 213
+              option(value='214') 214
+              option(value='215') 215
+              option(value='216') 216
+              option(value='217') 217
+              option(value='218') 218
+              option(value='219') 219
+              option(value='220') 220 Pretissimo
+          .form-group
+            label.text-left(for='instrument')
+              | Ingresa la notación musical 
+              small (Si necesitas ayuda puedes ir a la sección Funcionamiento)
+              | :
+            textarea#notacion.form-control(rows='5', name='notacion', cols='50', title='Inserta la notación', maxlength='2000')
+          .form-group
+            input#submit.btn.btn-success(type='button', value='Generar', title='Botón para generar sonido a partir de la notación ingresada. Para reproducir por teclado presione la tecla control y la tecla q al mismo tiempo')
+            input#Stop.btn.btn-success(type='button', value='Detener', title='Botón para detener el sonido que se encuentre en reproducción. Para detener por teclado presione la tecla control y la tecla b al mismo tiempo', disabled='true')
+            input#desgercarMidi.btn.btn-success(type='button', value='Descargar MIDI', title='Botón para descargar archivo en formato MIDI del sonido generado.')
+            input#descargarPdf.btn.btn-success(type='button', value='Descargar PDF', title='Botón para generar archivo en formato PDF a partir de la notación ingresada.')
+            input#descargarBraille.btn.btn-success(type='button', value='Descargar Braille', title='Botón para generar archivo Braille a partir de la notación ingresada.')
+          input#identificador(type='hidden')
+          input#accion(type='hidden', name='accion')
+    .form-group
+      .col-lg-12.text-center
+        .ui-widget
+          #notation		  
+  section#about.bg-primary
+    br
+    h1.hidden Educación inclusiva
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading Educación inclusiva
+          hr.light
+          p.text-faded
+            | "La inclusión se ve como el proceso de identificar y responder a la diversidad de las necesidades de todos los estudiantes a través de la mayor participación en el aprendizaje, las culturas y las comunidades, y reduciendo la exclusión en la educación. " -UNESCO
+          br
+          br
+          p
+            | En la enseñanza tradicional de música para estudiantes con y sin discapacidad visual se presentan problemas de comunicación debido al tipo de accesibilidad a las partituras musicales. 
+            br
+            br
+            |                         Accesmusic se presenta como una herramienta novedosa para hacer la enseñanza musical más inclusiva en este tipo de situaciones, ya que permite a estudiantes de música con y sin discapacidad visual crear, editar, escuchar y exportar el material musical en formato MIDI, Braille y PDF con el fin de mejorar su aprendizaje e interacción con sus compañeros y el instructor.
+            br
+            br
+            |                         Para tal fin esta página permite a sus usuarios ingresar seleccionar un instumento, determinar un tempo e ingresar notación musical en formato cifrado inglés.
+            br
+            br
+          a.btn.btn-default.btn-xl(href='#howWorks') ¿Cómo funciona?
+          br
+          br
+  section#howWorks
+    br
+    h1.hidden Así funciona
+    .container
+      .row
+        .col-lg-12.text-center
+          h2.section-heading Así funciona
+          hr
+    .container
+      .row
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            a.fa.fa-4x.fa-file-text-o.bounceIn.text-primary
+            h3 Prepara material musical
+            p.text-muted Prepara o ten presente el material musical para procesarlo en el sistema. 
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            a.fa.fa-4x.fa-keyboard-o.bounceIn.text-primary(data-wow-delay='.1s')
+            h3 Introduce la notación
+            p.text-muted
+              | Ingresa el texto de la notación musical en la caja de texto ubicada en la parte superior. Puedes reproducir (ctrl + q) o detener (ctrl + b) la notación escrita.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            a.fa.fa-4x.fa-pencil-square-o.bounceIn.text-primary(data-wow-delay='.2s')
+            h3 Edita el contenido
+            p.text-muted A través de la interacción que brinda Accesmusic, edita tu material.
+        .col-lg-3.col-md-6.text-center
+          .service-box
+            a.fa.fa-4x.fa-music.bounceIn.text-primary(data-wow-delay='.3s')
+            h3 Exporta el resultado obtenido
+            p.text-muted
+              | Puedes exportar tu material a los formatos MIDI, Braille o PDF con cada uno de los respectivos botones que se encuentran en la parte superior.
+    .container
+      .row
+        .col-lg-12.text-center
+          br
+          br
+          h2.section-heading Notación musical
+          p
+            | A continuación se definirán las reglas que se deben cumplir con el fin de ingresar correctamente la notación musical.
+            | Inicialmente debes tener presente que esta notación proviene de palabras anglosajonas y no hay diferencia entre minúsculas y mayúsculas, pero en los ejemplos posteriores se visualizará el estilo recomendado para brindar una mejor legibilidad.
+            | También debes tener presente que el espacio (o espacios) dentro de cada conjunto de caracteres significará una nota o acorde diferente interpretado por el sistema.
+          h3 Notas, silencios y acordes
+          p
+            | La especificación de una nota o silencio se realiza por el nombre de la nota correspondiendo de la siguiente manera: 
+            br
+            | C = do
+            br
+            | D = re
+            br
+            | E = mi
+            br
+            | F = fa
+            br
+            | G = sol
+            br
+            | A = la
+            br
+            | B = si
+            br
+            |  R = silencio 
+            br
+            |                         Después de especificar la letra de la nota (sin dejar espacio), se puede adicionar sostenido o bemol, la octava en la que se encuentra la nota, la duración de la nota, o un acorde, los cuales serán descritos con más detalle posteriormente.
+          h3 Sostenidos, bemoles y naturales
+          p
+            | Puedes indicar que una nota es sostenido o bemol usando el carácter 
+            b #
+            |  para indicar un sostenido o el carácter 
+            b b
+            |  para indicar bemol escribiéndolo inmediatamente después del nombre de la nota. De otra manera, si no se pone alguno de estos caracteres, la nota será natural. También puedes indicar si quieres un doble sostenido o un doble bemol usando el carácter 
+            b ##
+            |  y 
+            b bb
+            |  respectivamente.
+            br
+            br
+            |  Ejemplo: 
+            br
+            | C# = do sostenido
+          h3 Octava
+          p
+            | Para especificar la octava de la nota, se debe poner después de la letra de la nota un número del 1 al 10 el cual indica la octava. Si no se pone un número, por defecto las notas sonarán en la quinta octava y los acordes en la cuarta octava.
+            br
+            br
+            |  Ejemplo: 
+            br
+            |  C6 = do en la sexta octava
+          h3 Acordes
+          p
+            | Si en la notación ingresada el conjunto de caracteres corresponde a un acorde, entonces éste debe escribirse de alguna de las siguientes maneras después de la letra de la nota según corresponda:
+            br
+            | maj = mayor
+            br
+            | min = menor
+            br
+            | aug = aumentado
+            br
+            | dim = disminuido
+            br
+            | dom7 = dominante
+            br
+            | maj7 = séptima mayor
+            br
+            | min7 = séptima menor
+            br
+            | sus4 = cuarta suspendida
+            br
+            | sus2 = segunda suspendida
+            br
+            | maj6 = sexta mayor
+            br
+            | min6 = sexta menor
+            br
+            | dom9 = novena dominante
+            br
+            | maj9 = novena mayor
+            br
+            | min9 = novena menor
+            br
+            | dim7 = séptima disminuida
+            br
+            | add9 = novena aumentada        
+            br
+            br
+            |  Ejemplos: 
+            br
+            |  Cmaj = acorde de do mayor 
+            br
+            |   Eb6maj = acorde de mi bemol en octava 6 
+            br
+            |  Cmaj7 = acorde de do mayor séptima
+          h3 Inversiones
+          p
+            | Puedes indicar si un acorde tiene la primera inversión usando el carácter 
+            b ^
+            |  o segunda inversión utilizando los caracteres 
+            b ^^
+            |  al final del acorde escrito. De otra manera, si no se pone ninguno de estos caracteres, el acorde será fundamental.
+            br
+            br
+            |  Ejemplos: 
+            br
+            |  F#maj = acorde de fa mayor sostenido fundamental 
+            br
+            |   F#maj^ = acorde de fa mayor con primera inversión 
+            br
+            |  F#maj^^ = acorde de fa mayor con segunda inversión
+          h3 Duración
+          p
+            | La duración indica qué tanto suena una nota y ésta corresponde a una letra la cual es puesta después del número de la octava si existe, o despúes de la letra de la nota o el nombre del acorde.
+            | Las letras correspondientes a la duración están descritas a continuación, y si no especifica la duración, se tomará por defecto la duración de 
+            b negra
+            | :
+            br
+            | w = redonda
+            br
+            | h = blanca
+            br
+            | q = negra
+            br
+            | i = corchea
+            br
+            | s = semicorchea
+            br
+            | t = fusa
+            br
+            | x = semifusa
+            br
+            | o = garrapatea
+            br
+            br
+            |  Ejemplo: 
+            br
+            |  C6h = nota do en la sexta octava con duración de blanca 
+            br
+            |  DbmajW = acorde de re mayor bemol con duración de redonda
+          h3 Instrumento
+          p
+            | Para la reproducción de la notación ingresada tienes la posibilidad de seleccionar el instrumento desde la lista de selección ubicada en la parte superior.
+          h3 Tempo
+          p
+            | Selecciona el tempo adecuado para la reproducción de la notación ingresada seleccionándo la opción de la lista de tempos teniendo en cuenta que los números corresponden a los bits por minuto de acuerdo a la siguiente guía:
+            br
+            | Grave = 40
+            br
+            | Largo = 45
+            br
+            | Larghetto = 50
+            br
+            | Lento = 55
+            br
+            | Adagio = 60
+            br
+            | Adagietto = 65
+            br
+            | Andante = 70
+            br
+            | Andantino = 80
+            br
+            | Moderato = 95
+            br
+            | Allegretto = 110
+            br
+            | Allegro = 120
+            br
+            | Vivace = 145
+            br
+            | Presto = 180
+            br
+            | Pretissimo = 220
+  section#formats.no-padding
+    br
+    h1.hidden Formatos de entrada
+    .container-fluid
+      .row.no-gutter
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/5.jpg', alt='Notación JFugue')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de entrada
+                .project-name
+                  | Notación JFugue
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/2.jpg', alt='Notación JFugue')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de entrada
+                .project-name
+                  | Notación JFugue
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/3.jpg', alt='Notación JFugue')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de entrada
+                .project-name
+                  | Notación JFugue
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/4.jpg', alt='Audio MIDI')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de salida
+                .project-name
+                  | Audio MIDI
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/5.jpg', alt='Braille impreso')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de salida
+                .project-name
+                  | Braille impreso
+        .col-lg-4.col-sm-6
+          a.portfolio-box(href='#')
+            img.img-responsive(src='img/portfolio/2.jpg', alt='Pentagrama')
+            .portfolio-box-caption
+              .portfolio-box-caption-content
+                .project-category.text-faded
+                  | Formatos de salida
+                .project-name
+                  | Pentagrama
+  section#contact
+    br
+    h1.hidden Nuestro equipo de trabajo
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading Nuestro equipo de trabajo
+          hr
+          br
+          br
+          p
+            | Somos un grupo de estudiantes de Ingeniería de sistemas de la universidad El Bosque pertenecientes al grupo de investigación OSIRIS. 
+            br
+            |                         Cualquier duda, comentario o sugerencia, puedes contactarnos en nuestros correos:
+      .row
+        .col-lg-12.text-center
+          br
+          br
+          a.fa.fa-envelope-o.fa-3x.bounceIn(data-wow-delay='.1s')
+          br
+          br
+          br
+          p
+            a(href='mailto:your-email@your-domain.com') adtorresa@unbosque.edu.co
+            br
+            a(href='mailto:your-email@your-domain.com') dsanchezf@unbosque.edu.co
+            br
+            a(href='mailto:your-email@your-domain.com') nmorenov@unbosque.edu.co
+          br
+          br
+  
